@@ -8,6 +8,11 @@ public class DijkstraSearch<Vertex> extends Search<Vertex> {
         super(graph);
     }
 
+    @Override
+    public boolean pathExist(Vertex source, Vertex destination) {
+        return false;
+    }
+
     public List<Vertex> findShortestPath(Vertex source, Vertex destination) {
         calculateShortestDistances(source);
 
