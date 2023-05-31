@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Search<Vertex> {
+public abstract class Search<Vertex> {
     private WeightedGraph<Vertex> graph;
 
     public Search(WeightedGraph<Vertex> graph) {
@@ -37,4 +37,6 @@ public class Search<Vertex> {
 
         return false;  // Returns false if the destination vertex is not reachable
     }
+
+    public abstract boolean pathExist(Vertex source, Vertex destination);
 }
